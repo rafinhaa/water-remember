@@ -1,10 +1,15 @@
 import { StatusBar } from "expo-status-bar"
+import { useTranslation } from "react-i18next"
 import { StyleSheet, Text, View } from "react-native"
 
+import "@/locales"
+
 export default function App() {
+  const { t } = useTranslation()
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>{t("startingMessage")}</Text>
       <StatusBar style="auto" />
     </View>
   )
