@@ -3,12 +3,15 @@ import {
   FiraSans_600SemiBold,
   FiraSans_700Bold,
 } from "@expo-google-fonts/fira-sans"
+import { TamaguiProvider } from "@tamagui/core"
 import { useFonts } from "expo-font"
 import { StatusBar } from "expo-status-bar"
 import { useTranslation } from "react-i18next"
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native"
+import { ActivityIndicator, Text } from "react-native"
 
 import "@/locales"
+
+import config from "./tamagui.config"
 
 export default function App() {
   const { t } = useTranslation()
@@ -22,18 +25,9 @@ export default function App() {
   if (!fontsLoaded) return <ActivityIndicator />
 
   return (
-    <View style={styles.container}>
-      <Text>{t("startingMessage")}</Text>
+    <TamaguiProvider config={config}>
       <StatusBar style="auto" />
-    </View>
+      <Text>{t("startingMessage")}</Text>
+    </TamaguiProvider>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-})

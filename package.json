@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "@expo-google-fonts/fira-sans": "^0.3.0",
+    "@tamagui/babel-plugin": "^1.126.0",
+    "@tamagui/config": "^1.125.35",
+    "@tamagui/core": "^1.125.35",
     "expo": "~52.0.43",
     "expo-font": "^13.0.4",
     "expo-status-bar": "~2.0.1",
