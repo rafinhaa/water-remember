@@ -14,7 +14,9 @@
     "type:check": "tsc --noEmit"
   },
   "dependencies": {
+    "@expo-google-fonts/fira-sans": "^0.3.0",
     "expo": "~52.0.43",
+    "expo-font": "^13.0.4",
     "expo-status-bar": "~2.0.1",
     "i18next": "^24.2.3",
     "react": "18.3.1",
