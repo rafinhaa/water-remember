@@ -1,3 +1,4 @@
+import "./__mocks__/phosphor-react-native.js"
 import { resources as mockResources } from "./src/utils/tests/index"
 
 jest.mock("react-i18next", () => ({
