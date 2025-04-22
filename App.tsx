@@ -6,16 +6,14 @@ import {
 import { TamaguiProvider } from "@tamagui/core"
 import { useFonts } from "expo-font"
 import { StatusBar } from "expo-status-bar"
-import { useTranslation } from "react-i18next"
-import { ActivityIndicator, Text } from "react-native"
+import { ActivityIndicator } from "react-native"
 
 import "@/locales"
+import { Routes } from "@/routes"
 
 import config from "./tamagui.config"
 
 export default function App() {
-  const { t } = useTranslation()
-
   const [fontsLoaded] = useFonts({
     FiraSans_400Regular,
     FiraSans_700Bold,
@@ -27,7 +25,7 @@ export default function App() {
   return (
     <TamaguiProvider config={config}>
       <StatusBar style="auto" />
-      <Text>{t("startingMessage")}</Text>
+      <Routes />
     </TamaguiProvider>
   )
 }
