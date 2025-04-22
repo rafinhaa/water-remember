@@ -3,15 +3,18 @@ import {
   createBottomTabNavigator,
 } from "@react-navigation/bottom-tabs"
 import { NavigatorScreenParams } from "@react-navigation/native"
+import { useTranslation } from "react-i18next"
 
 import { History } from "@/screens/History"
-import { Home } from "@/screens/Home"
-import { My } from "@/screens/My"
+import { Me } from "@/screens/Me"
+import { Today } from "@/screens/Today"
+
+import { AnimatedTab } from "./components"
 
 type BottomTabParamList = {
-  Home: undefined
+  Today: undefined
   History: undefined
-  My: undefined
+  Me: undefined
 }
 
 const { Navigator, Screen } = createBottomTabNavigator<BottomTabParamList>()
@@ -26,13 +29,25 @@ type BottomTabScreenRouteProp<RouteName extends keyof BottomTabParamList> =
 type BottomTabNavigatorScreenParams = NavigatorScreenParams<BottomTabParamList>
 
 export const BottomTab = () => {
+  const { t } = useTranslation()
+
   return (
-    <Navigator>
-      <Screen name="Home" component={Home} />
+    <Navigator tabBar={(props) => <AnimatedTab {...props} />}>
+      <Screen
+        name="Today"
+        component={Today}
+        options={{
+          title: t("common.today"),
+        }}
+      />
 
-      <Screen name="History" component={History} />
+      <Screen
+        name="History"
+        component={History}
+        options={{ title: t("common.history") }}
+      />
 
-      <Screen name="My" component={My} />
+      <Screen name="Me" component={Me} options={{ title: t("common.me") }} />
     </Navigator>
   )
 }

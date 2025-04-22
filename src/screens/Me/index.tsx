@@ -1,9 +1,9 @@
 import { Text, View } from "@tamagui/core"
 
-export const Home = () => {
+export const Me = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Me</Text>
     </View>
   )
 }

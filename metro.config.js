@@ -1,3 +1,7 @@
+const {
+  wrapWithReanimatedMetroConfig,
+} = require("react-native-reanimated/metro-config")
+
 // Learn more https://docs.expo.io/guides/customizing-metro
 const { getDefaultConfig } = require("expo/metro-config")
 
@@ -11,4 +15,4 @@ const config = getDefaultConfig(__dirname, {
 // https://github.com/expo/expo/issues/23180
 config.resolver.sourceExts.push("mjs")
 
-module.exports = config
+module.exports = wrapWithReanimatedMetroConfig(config)
