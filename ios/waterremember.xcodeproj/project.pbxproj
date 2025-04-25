@@ -15,6 +15,7 @@
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		796D6950D9CA4B9D9BB933E1 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB19EB50E1F406AA4C058C3 /* noop-file.swift */; };
+		3A94CE93954D450596208987 /* water_cup.riv in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CF015F37A48C396142ACB /* water_cup.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-waterremember/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		1CB19EB50E1F406AA4C058C3 /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "waterremember/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 		D3018A9F715348DEB0A65875 /* waterremember-Bridging-Header.h */ = {isa = PBXFileReference; name = "waterremember-Bridging-Header.h"; path = "waterremember/waterremember-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9B3CF015F37A48C396142ACB /* water_cup.riv */ = {isa = PBXFileReference; name = "water_cup.riv"; path = "/home/rafinhaa/projects/water-remember/ios/Assets/water_cup.riv"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				9B3CF015F37A48C396142ACB /* water_cup.riv */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				78FFF9172E9B4630A92F9BB8 /* waterremember-Bridging-Header.h in Resources */,
+				3A94CE93954D450596208987 /* water_cup.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

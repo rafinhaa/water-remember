@@ -22,6 +22,14 @@
         "backgroundColor": "#ffffff"
       },
       "package": "cyou.codedev.waterremember"
-    }
+    },
+    "plugins": [
+      [
+        "expo-custom-assets",
+        {
+          "assetsPaths": ["./src/resources"]
+        }
+      ]
+    ]
   }
 }

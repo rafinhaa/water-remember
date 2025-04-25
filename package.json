@@ -21,6 +21,7 @@
     "@tamagui/config": "^1.125.35",
     "@tamagui/core": "^1.125.35",
     "expo": "~52.0.43",
+    "expo-custom-assets": "^1.4.1",
     "expo-font": "^13.0.4",
     "expo-status-bar": "~2.0.1",
     "i18next": "^24.2.3",
