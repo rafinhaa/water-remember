@@ -4,5 +4,16 @@
     "history": "Histórico",
     "me": "Meu"
   },
-  "startingMessage": "Abra o App dot js para começar a trabalhar na sua aplicação!"
+  "me": {
+    "totalIngested": "Total ingerido",
+    "totalRealized": "Total realizado",
+    "reminderSetup": "Configuração do lembrete",
+    "reminders": "Lembretes",
+    "enableNotifications": "Ativar notificações",
+    "disableNotifications": "Desativar notificações",
+    "deactivateWhenTargetIsReached": "Desativar quando o atingir a meta",
+    "toDrink": "Beber",
+    "dailyGoal": "Meta diária",
+    "genderAndWeight": "Gênero e peso"
+  }
 }
