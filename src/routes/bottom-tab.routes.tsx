@@ -38,6 +38,7 @@ export const BottomTab = () => {
         component={Today}
         options={{
           title: t("common.today"),
+          headerShown: false,
         }}
       />
 

@@ -7,7 +7,9 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from "react-native-reanimated"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
 
+import { useCustomTabBarHeight } from "@/hooks/useCustomTabBarHeight"
 import { BottomTabNavigatorScreenParams } from "@/routes/bottom-tab.routes"
 
 import AnimatedTabButton from "../AnimatedTabButton"
@@ -16,12 +18,16 @@ type RouteName = NonNullable<BottomTabNavigatorScreenParams["screen"]>
 
 const AnimatedTab = ({ state, descriptors, navigation }: BottomTabBarProps) => {
   const theme = getTokens()
+  const insets = useSafeAreaInsets()
+  const { setCustomTabBarHeight, setDistanceToBottom } = useCustomTabBarHeight()
   const [dimensions, setDimensions] = useState<LayoutRectangle>({
     width: 0,
     height: 0,
     x: 0,
     y: 0,
   })
+
+  const containerSafeSpaceBottom = insets?.bottom || theme.size.$4.val
 
   const gap = theme.size.$2.val
   const px = theme.size.$2.val
@@ -45,11 +51,17 @@ const AnimatedTab = ({ state, descriptors, navigation }: BottomTabBarProps) => {
   return (
     <View
       position="absolute"
-      b={50}
+      b={containerSafeSpaceBottom}
       justify="center"
       items="center"
       width="100%"
       flexDirection="row"
+      onLayout={(e) => {
+        setCustomTabBarHeight(e.nativeEvent.layout.height)
+        setDistanceToBottom(
+          e.nativeEvent.layout.height + containerSafeSpaceBottom,
+        )
+      }}
     >
       <View
         flexDirection="row"

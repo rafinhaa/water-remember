@@ -7,6 +7,7 @@ import { TamaguiProvider } from "@tamagui/core"
 import { useFonts } from "expo-font"
 import { StatusBar } from "expo-status-bar"
 import { ActivityIndicator } from "react-native"
+import { SafeAreaProvider } from "react-native-safe-area-context"
 
 import "@/locales"
 import { Routes } from "@/routes"
@@ -25,7 +26,9 @@ export default function App() {
   return (
     <TamaguiProvider config={config}>
       <StatusBar style="auto" />
-      <Routes />
+      <SafeAreaProvider>
+        <Routes />
+      </SafeAreaProvider>
     </TamaguiProvider>
   )
 }
