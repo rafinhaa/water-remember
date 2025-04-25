@@ -2422,6 +2422,11 @@
   resolved "https://registry.npmjs.org/@tamagui/compose-refs/-/compose-refs-1.126.0.tgz"
   integrity sha512-GqpyZp7LDYItrF3zIiDdMOlvcT972KtZhjTeQ36HzS3YljAz7CLENHGQLS1qFHpfljeWxuhbRBrYrcuTVvg4og==
 
+"@tamagui/compose-refs@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/compose-refs/-/compose-refs-1.126.2.tgz#0d0df852825bfa110cc13ed3e9cfb424ca6d3dda"
+  integrity sha512-b1Q8MxxK1q3/PvlOaas04ZR8fX+NvHhntqtwZ3DRJmT2TZZg9RsA8EGrZHAFz69jXXRqj6gyhSPn4csh7VWyzA==
+
 "@tamagui/config-default@1.126.0":
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/config-default/-/config-default-1.126.0.tgz"
@@ -2457,6 +2462,11 @@
   resolved "https://registry.npmjs.org/@tamagui/constants/-/constants-1.126.0.tgz"
   integrity sha512-C3Ga4LRZE/mSPTCdsZVDZdxvekf9oYLbgMFjmZ0nHy9+ErcNh/+W7DEpoC6NNdQszqyZ5DkOZwr20pC2bbd1Ow==
 
+"@tamagui/constants@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/constants/-/constants-1.126.2.tgz#3ad1603305d82e2b2180d3c2f93b36549343880c"
+  integrity sha512-cwCAnUdSHz4aknyPKZA10N8ByHesoUkCh9KXDIpwTOG6LoQt49+iMIS+Sl7FRwN13C71HoO8OKLYcFVpdewV/Q==
+
 "@tamagui/core@1.125.35", "@tamagui/core@^1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/core/-/core-1.125.35.tgz"
@@ -2478,6 +2488,17 @@
     "@tamagui/react-native-use-responder-events" "1.126.0"
     "@tamagui/use-event" "1.126.0"
     "@tamagui/web" "1.126.0"
+
+"@tamagui/core@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/core/-/core-1.126.2.tgz#86aed3db18b530a2bc5c7a90397ebac49843f46f"
+  integrity sha512-l76jQBkb5nOc2xC4ReF71rbpYc1oNpuOfjN+ZPutSR8yjSf9bUR0yAdQJxYyjUVKTC9O5+5T5pJsgMl2somIEw==
+  dependencies:
+    "@tamagui/react-native-media-driver" "1.126.2"
+    "@tamagui/react-native-use-pressable" "1.126.2"
+    "@tamagui/react-native-use-responder-events" "1.126.2"
+    "@tamagui/use-event" "1.126.2"
+    "@tamagui/web" "1.126.2"
 
 "@tamagui/create-theme@1.125.35":
   version "1.125.35"
@@ -2533,6 +2554,21 @@
     esbuild-register "^3.6.0"
     fs-extra "^11.2.0"
 
+"@tamagui/get-button-sized@^1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/get-button-sized/-/get-button-sized-1.126.2.tgz#c09b4a67922e106682b31d4334fef316b9fb1620"
+  integrity sha512-+EieoToX+tN6Ei1z9g0ss+mAewTxNQo29JcbgUyWU5U9U6PDknQVC7r+TcFU7+7XKGp7/andIiylPdHYWW34Dg==
+  dependencies:
+    "@tamagui/get-token" "1.126.2"
+    "@tamagui/web" "1.126.2"
+
+"@tamagui/get-token@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/get-token/-/get-token-1.126.2.tgz#770e44eabcf74e0a391b2af6137e8e4f0799c00e"
+  integrity sha512-xWkS5WKaqxK6EGkqelfJfA5jZCJk+lymCVblIWqa8IvnQKE6tjeg23k1YtkasARFvxWLYsKM/h2wri8YZBL3tQ==
+  dependencies:
+    "@tamagui/web" "1.126.2"
+
 "@tamagui/helpers-node@1.126.0":
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/helpers-node/-/helpers-node-1.126.0.tgz"
@@ -2556,6 +2592,22 @@
     "@tamagui/constants" "1.126.0"
     "@tamagui/simple-hash" "1.126.0"
 
+"@tamagui/helpers@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/helpers/-/helpers-1.126.2.tgz#34f61093cf264cc072dda7a107dc9c5b0afbd103"
+  integrity sha512-QAd6d/uZPctF5jSCbdm+eSNPfokH/kpvvpY0aWO19SGKoXT4L9mUyiN+i7vHASyxvXBV6YP8H46+FHmqq5OcKA==
+  dependencies:
+    "@tamagui/constants" "1.126.2"
+    "@tamagui/simple-hash" "1.126.2"
+
+"@tamagui/linear-gradient@^1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/linear-gradient/-/linear-gradient-1.126.2.tgz#d2e8cbdffed81922df16771eb5d398a284edec91"
+  integrity sha512-cwn29YDwPqhjBua6LcrNcKMGHN7xKv0Lu9KnqPf9Z+k5NOYAWPRtayPprKRBrp+XIlAVTtmyN7MymkHbDexEaQ==
+  dependencies:
+    "@tamagui/core" "1.126.2"
+    "@tamagui/stacks" "1.126.2"
+
 "@tamagui/normalize-css-color@1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/normalize-css-color/-/normalize-css-color-1.125.35.tgz"
@@ -2567,6 +2619,13 @@
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/normalize-css-color/-/normalize-css-color-1.126.0.tgz"
   integrity sha512-6jS96AYna0EdjJ2Oj8+JGlMh4YViPv5AhM8OXGL6SoNw39PXwvKY65YMgextAY5sqmb6oh7rkdwFUqvFwblNrg==
+  dependencies:
+    "@react-native/normalize-color" "^2.1.0"
+
+"@tamagui/normalize-css-color@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/normalize-css-color/-/normalize-css-color-1.126.2.tgz#d7e4f2948023df2c26104f317bc063b97e479859"
+  integrity sha512-L2BrEahUA1nnQtHVsEkOB8oIe3sawYpBzqLI44sFOqxuc4JP8H60rFQxWap8y1CfnK8EzVNhvzy7r37v1EEegg==
   dependencies:
     "@react-native/normalize-color" "^2.1.0"
 
@@ -2589,6 +2648,13 @@
   dependencies:
     "@tamagui/web" "1.126.0"
 
+"@tamagui/react-native-media-driver@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/react-native-media-driver/-/react-native-media-driver-1.126.2.tgz#fba6c639ac0b20564e0b34cef1f90efdf804cc4f"
+  integrity sha512-Vq7a6t6GNnEfiwUizHAyOf8qR8rUDL0yDfpUiS3axqQild/Rk+Rct3BW5JGLow8NlWZzrPAxvk7vOqGJQ9ucbw==
+  dependencies:
+    "@tamagui/web" "1.126.2"
+
 "@tamagui/react-native-use-pressable@1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/react-native-use-pressable/-/react-native-use-pressable-1.125.35.tgz"
@@ -2599,6 +2665,11 @@
   resolved "https://registry.npmjs.org/@tamagui/react-native-use-pressable/-/react-native-use-pressable-1.126.0.tgz"
   integrity sha512-iCA0i2uJe/hflPCgjbIDD5tT9f6xorh6Y7BHSwj5lC3uMSd3FrZqwv+rJPex4THL3Tz5UKLKM7fMWi1sLp5uvw==
 
+"@tamagui/react-native-use-pressable@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/react-native-use-pressable/-/react-native-use-pressable-1.126.2.tgz#1ad9cb93f36889fd0f30bf81312d4431523b0268"
+  integrity sha512-UAgm1iEG54LgPZHjQzVCbmq/Q1kbtDWZAAGiUI187vuIPtrfmHfxpIrOfcbdJWM9e//Kq8p3VCpgzXTxAzSpZg==
+
 "@tamagui/react-native-use-responder-events@1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/react-native-use-responder-events/-/react-native-use-responder-events-1.125.35.tgz"
@@ -2608,6 +2679,11 @@
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/react-native-use-responder-events/-/react-native-use-responder-events-1.126.0.tgz"
   integrity sha512-UdG/V4+4bTs19vxikRx5qroAQeayDxDo6QPH5fcAEPK5I+Az9/l11/CsmeL/mgsoFE/K5yvathMGeBtNi0Bs3w==
+
+"@tamagui/react-native-use-responder-events@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/react-native-use-responder-events/-/react-native-use-responder-events-1.126.2.tgz#68acb00879a0545c2c303603b71c32fc7ed23a4b"
+  integrity sha512-erV+apPYb0BPV7ipctpWqQj/cbm5iAiwk7IKUb3ZCWVwJR99DVkjs/i7DvJcG8HZhWnSnITJ+OVW4cH2SFsIbA==
 
 "@tamagui/react-native-web-internals@1.126.0":
   version "1.126.0"
@@ -2655,6 +2731,18 @@
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/simple-hash/-/simple-hash-1.126.0.tgz"
   integrity sha512-Yd7vMJki8ZiMi1NJaM1CnTGWArwzNlX9P8SEoDdA/ylsjfuUA+8+XxUXWx43QbCAwaTml8KEcoxjlJNauOgEJQ==
+
+"@tamagui/simple-hash@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/simple-hash/-/simple-hash-1.126.2.tgz#8fd0e11cd1980703d30e303ff349a9775236a118"
+  integrity sha512-4NYkrIAFDs08xDHF7Ftx+DZ2R61qJWf7hNM9XbcPU/BtFbe3y2lSDx6VwZdQ2aMH0/nPEQlKQf7FwMuzjsBcOg==
+
+"@tamagui/stacks@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/stacks/-/stacks-1.126.2.tgz#918a74712fcccdf5ab01461d78e5c790f39d4a6b"
+  integrity sha512-Dv/7pLtuDDdNoYPO30x0cxP4OjzP07hVBtuP9hEv/CCx58gSEF8v4wGlrp3EFZ/FQOXvmeb+XpvDcpWt4NWrsQ==
+  dependencies:
+    "@tamagui/core" "1.126.2"
 
 "@tamagui/static@1.126.0":
   version "1.126.0"
@@ -2733,6 +2821,11 @@
   resolved "https://registry.npmjs.org/@tamagui/timer/-/timer-1.126.0.tgz"
   integrity sha512-oG02gBMuRLJDHeQFgtBmqZJ5lejonFSv81+qoJ5E3nlXNgfEmrGrpRLwOT3bAUH4M/wrsRya1qa+5oxBIT08Wg==
 
+"@tamagui/timer@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/timer/-/timer-1.126.2.tgz#c2e16a7210dfe8adf6139a5fd4552924e39fe835"
+  integrity sha512-0w6+W2+DkHA2I5SYBv1k5tIrv899guCsNFQavCkXaqkIUuy2Dfl3kM7Ls3wiFg9z1FAVflbrvK1qhv2FqDr3nw==
+
 "@tamagui/types@1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/types/-/types-1.125.35.tgz"
@@ -2743,6 +2836,11 @@
   resolved "https://registry.npmjs.org/@tamagui/types/-/types-1.126.0.tgz"
   integrity sha512-ux7O6Bs2x7AnVWaD7fNmele53JoeaJ+0ssElIOcy9M+cKhyJyt+5EUddvp4MPzkD547my13/L6Evb4vzvezAhg==
 
+"@tamagui/types@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/types/-/types-1.126.2.tgz#2c9fd9ce16cb208df1be5ccf729b31a387d7c8a0"
+  integrity sha512-zziB1JjCy/0nvrs8GPa98dLWxYMc5mdm1XrWLC5UeJoHd8YkiS0FKeiOVcQffZ9gY12uygIkbDWyCNN7BqMiXA==
+
 "@tamagui/use-did-finish-ssr@1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/use-did-finish-ssr/-/use-did-finish-ssr-1.125.35.tgz"
@@ -2752,6 +2850,11 @@
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/use-did-finish-ssr/-/use-did-finish-ssr-1.126.0.tgz"
   integrity sha512-VN+KKzY+F0fFJnME2M7x1CjUNQzCGbhwG2BasMDMS5mnjA0yFvcDzNbglLaiGKnK7LeHTGztLP5wNEf5J6uuQw==
+
+"@tamagui/use-did-finish-ssr@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/use-did-finish-ssr/-/use-did-finish-ssr-1.126.2.tgz#ce411a21be390a820148398b641cf02c8f3d6357"
+  integrity sha512-UI1g2ExYCVtqEpeW8ewrUJjyqxG3jRKMGLUbROlh8K2G81Heo0g6njLJK1r9jqW4GvM9hfuxcEhcMEz5D5m9kw==
 
 "@tamagui/use-event@1.125.35":
   version "1.125.35"
@@ -2767,6 +2870,13 @@
   dependencies:
     "@tamagui/constants" "1.126.0"
 
+"@tamagui/use-event@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/use-event/-/use-event-1.126.2.tgz#8c98c8027113ae0e7c9153aa9f40268dac16c1b1"
+  integrity sha512-rJoguVC+baAt1f9aoh0Lny2C7jO39lgOo3sMVNWkMoOW1ZhgEtNIZC+b+rUByaNKOsiBTUUz4NAlW8peA6rdPQ==
+  dependencies:
+    "@tamagui/constants" "1.126.2"
+
 "@tamagui/use-force-update@1.125.35":
   version "1.125.35"
   resolved "https://registry.npmjs.org/@tamagui/use-force-update/-/use-force-update-1.125.35.tgz"
@@ -2776,6 +2886,11 @@
   version "1.126.0"
   resolved "https://registry.npmjs.org/@tamagui/use-force-update/-/use-force-update-1.126.0.tgz"
   integrity sha512-Fp8oNTl4bUBAoJ9jThkTQ2vqNDIjen/PFicIMVZnEHh6xy3/lEGfuKZX6MQmTB/n8tGasH60cuMQ8kQPNgOX+g==
+
+"@tamagui/use-force-update@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/use-force-update/-/use-force-update-1.126.2.tgz#28776074bb4b613ac2ab719cf5a54102d19db0f4"
+  integrity sha512-MMBmN4jEKXhlYNPpY9A/pg63jyPVBoTDEFZKzkjR1zf0zNsqQknMhKqJi/ClFtPM/Hh2ki2zGsPQXqQDFrWn3g==
 
 "@tamagui/use-presence@1.125.35":
   version "1.125.35"
@@ -2820,6 +2935,21 @@
     "@tamagui/use-did-finish-ssr" "1.126.0"
     "@tamagui/use-event" "1.126.0"
     "@tamagui/use-force-update" "1.126.0"
+
+"@tamagui/web@1.126.2":
+  version "1.126.2"
+  resolved "https://registry.npmjs.org/@tamagui/web/-/web-1.126.2.tgz#df4d5de6dc3e25a171aef7ef14b673cda9719c57"
+  integrity sha512-ut+Rs0bLTmSIlG31hm2OKkdpDMZp03T5yibqBE8XNcGH9G6FaCq/0it1CZ/otebjxFeEvr0W7r6n0zwxXJxk6Q==
+  dependencies:
+    "@tamagui/compose-refs" "1.126.2"
+    "@tamagui/constants" "1.126.2"
+    "@tamagui/helpers" "1.126.2"
+    "@tamagui/normalize-css-color" "1.126.2"
+    "@tamagui/timer" "1.126.2"
+    "@tamagui/types" "1.126.2"
+    "@tamagui/use-did-finish-ssr" "1.126.2"
+    "@tamagui/use-event" "1.126.2"
+    "@tamagui/use-force-update" "1.126.2"
 
 "@testing-library/react-native@^13.2.0":
   version "13.2.0"
@@ -5210,6 +5340,11 @@ expo-keep-awake@~14.0.3:
   version "14.0.3"
   resolved "https://registry.npmjs.org/expo-keep-awake/-/expo-keep-awake-14.0.3.tgz"
   integrity sha512-6Jh94G6NvTZfuLnm2vwIpKe3GdOiVBuISl7FI8GqN0/9UOg9E0WXXp5cDcfAG8bn80RfgLJS8P7EPUGTZyOvhg==
+
+expo-linear-gradient@~14.0.2:
+  version "14.0.2"
+  resolved "https://registry.npmjs.org/expo-linear-gradient/-/expo-linear-gradient-14.0.2.tgz#51fb266d1c7a38349077d243e383cc3d69d4356b"
+  integrity sha512-nvac1sPUfFFJ4mY25UkvubpUV/olrBH+uQw5k+beqSvQaVQiUfFtYzfRr+6HhYBNb4AEsOtpsCRkpDww3M2iGQ==
 
 expo-modules-autolinking@2.0.8:
   version "2.0.8"

@@ -23,6 +23,7 @@
     "expo": "~52.0.43",
     "expo-custom-assets": "^1.4.1",
     "expo-font": "^13.0.4",
+    "expo-linear-gradient": "~14.0.2",
     "expo-status-bar": "~2.0.1",
     "i18next": "^24.2.3",
     "phosphor-react-native": "^2.3.1",
