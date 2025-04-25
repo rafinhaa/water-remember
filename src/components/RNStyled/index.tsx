@@ -1,6 +1,19 @@
 import { styled } from "@tamagui/core"
-import { TouchableOpacity as RNTouchableOpacity } from "react-native"
+import {
+  ScrollView as RNScrollView,
+  TouchableOpacity as RNTouchableOpacity,
+} from "react-native"
 
 const TouchableOpacity = styled(RNTouchableOpacity)
 
-export default { TouchableOpacity }
+const ScrollView = styled(
+  RNScrollView,
+  {},
+  {
+    accept: {
+      contentContainerStyle: "style",
+    },
+  },
+)
+
+export default { TouchableOpacity, ScrollView }
