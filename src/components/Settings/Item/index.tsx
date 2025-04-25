@@ -9,7 +9,7 @@ import Icon, { IconProps } from "../../Icon"
 export type ItemProps = Omit<TouchableOpacityProps, "children"> & {
   icon: IconProps["name"]
   title: string
-  description: string
+  description?: string
   rightAction?: React.ReactNode | React.JSX.Element
 }
 
@@ -28,7 +28,11 @@ const Item = ({
           <Typography.Title size="sm" weight="semiBold">
             {title}
           </Typography.Title>
-          <Typography.Body size="xs">{description}</Typography.Body>
+          {description && (
+            <Typography.Body size="xs" color="$show">
+              {description}
+            </Typography.Body>
+          )}
         </View>
         {rightAction ? rightAction : <Icon name="CaretRight" color="$sky300" />}
       </View>

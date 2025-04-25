@@ -16,7 +16,18 @@ describe("Item", () => {
 
     expect(screen.getByTestId("icon-Bell")).toBeTruthy()
     expect(screen.getByText(DATA.title)).toBeTruthy()
-    expect(screen.getByText(DATA.description)).toBeTruthy()
+    expect(screen.getByText(DATA.description!)).toBeTruthy()
+    expect(screen.getByTestId("icon-CaretRight")).toBeTruthy()
+  })
+
+  it("should be able to render correctly without description", () => {
+    const newData = { ...DATA, description: undefined }
+
+    renderWithProviders(<Item {...newData} />)
+
+    expect(screen.getByTestId("icon-Bell")).toBeTruthy()
+    expect(screen.getByText(DATA.title)).toBeTruthy()
+    expect(screen.queryByText(DATA.description!)).not.toBeTruthy()
     expect(screen.getByTestId("icon-CaretRight")).toBeTruthy()
   })
 
@@ -28,7 +39,7 @@ describe("Item", () => {
 
       expect(screen.getByTestId("icon-Bell")).toBeTruthy()
       expect(screen.getByText(DATA.title)).toBeTruthy()
-      expect(screen.getByText(DATA.description)).toBeTruthy()
+      expect(screen.getByText(DATA.description!)).toBeTruthy()
 
       expect(screen.getByText("rightAction")).toBeTruthy()
 
